@@ -7,7 +7,7 @@ public class Checkpoint : MonoBehaviour
     private void OnTriggerEnter(Collider auto)
     {
         var id = auto.GetComponent<CarIdentity>();
-        Debug.Log("Checkpointtiin" + orderIndex + " osui " + id.car_name);
+        Debug.Log("Checkpointiin" + orderIndex + " osui " + id.car_name);
         var tarkastaja = auto.GetComponent<CheckpointTarkistus>();
         tarkastaja.MarkVisited(orderIndex);
     }
