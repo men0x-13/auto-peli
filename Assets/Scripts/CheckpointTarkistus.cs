@@ -8,6 +8,8 @@ public class CheckpointTarkistus : MonoBehaviour
     public bool[] visited;
     private int visitedCount;
 
+    public int laps = -1;
+
     public void Awake()
     {
         ResetLap();
@@ -16,7 +18,8 @@ public class CheckpointTarkistus : MonoBehaviour
     public void ResetLap()
     {
         visited = new bool[checkpointCount];
-        visitedCount++;
+        visitedCount = 0;
+        laps++;
     }
 
     public void MarkVisited(int index)
